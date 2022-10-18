@@ -8,7 +8,7 @@ def print_board(board):
 def win_check(board):
     win = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
     for w in win:
-        if board[w[0]] == board[w[1]] == board[w[2]] == '0':
+        if board[w[0]] == board[w[1]] == board[w[2]]:
             return 1
 
 def error_check(board, turn):
